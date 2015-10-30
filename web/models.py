@@ -19,6 +19,6 @@ class Web(models.Model):
     view_count = models.IntegerField(default=0)
     created_at = models.DateTimeField(auto_now=True)
     updated_at = models.DateTimeField(auto_now=True)
-
+    #kljdhcdskvndszv
     def __str__(self):
         return self.title
