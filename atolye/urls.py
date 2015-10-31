@@ -15,7 +15,11 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+from web import views as webviews
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^page/(?P<content_id>[0-9]+)/$',webviews.page_html, name='page_html'),
+    url(r'^login/',webviews.weblogin, name='weblogin'),
+    url(r'^$', webviews.webindex_html),
 ]

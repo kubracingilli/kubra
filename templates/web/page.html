@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf8'/>
+    <title>{{ page }}</title>
+  </head>
+  <body>
+    <h1> {{ page.title| upper}} </h1>
+    {{ page.content }} <br><br>
+    <b> Yazar: </b> {{page.author}}<br>
+    <b> Tarih: </b> {{page.created_at|date:"d.m.Y H:i:s"}}<br>
+  </body>
+</html>
